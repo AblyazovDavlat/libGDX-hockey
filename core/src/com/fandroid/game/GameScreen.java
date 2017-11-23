@@ -171,8 +171,8 @@ public class GameScreen implements Screen{
                 level++;
             goalYour = 0;
             goalEnemy = 0;
-
-            while (ballYSpeed < 9) {
+            
+            if (ballYSpeed < 9) {
 
                 if (shipXSpeed < 0) shipXSpeed--;
                 else shipXSpeed++;
